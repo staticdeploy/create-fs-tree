@@ -1,0 +1,19 @@
+language: node_js
+
+node_js:
+  - 4
+  - 6
+
+deploy:
+  provider: npm
+  email: $NPM_EMAIL
+  api_key: $NPM_TOKEN
+  on:
+    tags: true
+
+script:
+  - yarn lint
+  - yarn coverage
+  - yarn coveralls
+
+cache: yarn

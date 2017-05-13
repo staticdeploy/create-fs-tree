@@ -1,0 +1,9 @@
+{
+  "extends": "tslint:latest",
+  "rules": {
+    "arrow-parens": false,
+    "object-literal-sort-keys": false,
+    "space-before-function-paren": true,
+    "trailing-comma": [false]
+  }
+}

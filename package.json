@@ -1,0 +1,36 @@
+{
+  "name": "create-fs-tree",
+  "version": "0.0.0",
+  "description": "Create a fs tree from a json definition",
+  "main": "lib/src/index.js",
+  "typings": "lib/src/index.d.ts",
+  "scripts": {
+    "compile": "tsc",
+    "lint": "tslint src/**/*.ts test/**/*.ts",
+    "test": "NODE_ENV=test mocha --compilers ts:ts-node/register --recursive",
+    "coverage": "nyc --reporter=html --reporter=text --reporter=lcov --extension .ts npm test",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "prepublish": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/staticdeploy/create-fs-tree.git"
+  },
+  "author": "Paolo Scanferla <paolo.scanferla@gmail.com>",
+  "homepage": "https://github.com/staticdeploy/create-fs-tree",
+  "devDependencies": {
+    "@types/chai": "^3.5.2",
+    "@types/fs-extra": "^3.0.0",
+    "@types/mocha": "^2.2.41",
+    "chai": "^3.5.0",
+    "coveralls": "^2.13.1",
+    "mocha": "^3.3.0",
+    "nyc": "^10.3.2",
+    "ts-node": "^3.0.4",
+    "tslint": "^5.2.0",
+    "typescript": "^2.3.2"
+  },
+  "dependencies": {
+    "fs-extra": "^3.0.1"
+  }
+}
