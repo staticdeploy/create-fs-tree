@@ -117,6 +117,6 @@ Removes the `root` path. Equivalent to `rm -rf`.
 
 Nothing.
 
-## Contributing
+## Contribute
 
 See [CONTRIBUTING](./CONTRIBUTING.md).
