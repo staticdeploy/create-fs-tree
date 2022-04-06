@@ -28,7 +28,7 @@ import {join} from "path";
 
 describe("my test subject", () => {
 
-    const dir = join(os.tmpdir(), "root");
+    const dir = join(tmpdir(), "root");
 
     before(() => {
         createTree(dir, {
